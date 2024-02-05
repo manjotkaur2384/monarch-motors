@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <title>MonarchMotors</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let reviewIndex = 0;
+    showReviews();
+
+    function showReviews() {
+        const reviews = document.getElementsByClassName("fade-review");
+
+        for (let i = 0; i < reviews.length; i++) {
+            reviews[i].style.display = "none";
+        }
+
+        reviewIndex++;
+
+        if (reviewIndex > reviews.length) {
+            reviewIndex = 1;
+        }
+
+        reviews[reviewIndex - 1].style.display = "block";
+        setTimeout(showReviews, 5000); // Change slide every 5 seconds
+    }
+});
+
+    </script>
+
+<body>
+
+    <!-- Header Section -->
+    
+    <header>
+        <div class="logo"> Monarch Motors</div>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Inventory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+        <section class="home">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="images/WhatsApp Video 2023-12-06 at 3.25.58 AM.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content-overlay">
+        <div class="content">
+            <h1>Welcome to Monarch Motors</h1>
+            </div>
+           </div>
+   
+    </section>
+    <a href="product.html" class="cta-button">View Cars</a>
+   
+        </div>
+        <h2 class="wcu">Why Choose Us</h2>
+        <h3 class="wcu">Monarch Motors, The name that you can trust!</h3>
+           
+        <section class="why-choose">
+            
+            <div class="choose-box" id="box1">
+                <h3>BEST RATE</h3>
+                
+                <p>Financing available</p>
+            </div>
+            <div class="choose-box" id="box2">
+                <h3>POPULAR VEHICLES</h3>
+                
+                <p>Wide range of brands</p>
+            </div>
+            <div class="choose-box" id="box3">
+                <h3>NO HIDDEN</h3>
+                <p>Customer Satisfaction</p>
+            </div>
+        </section>
+        
+
+
+        <div class="review-section">
+            <h2>What Our Customers Say</h2>
+            <div class="slideshow-container-review">
+                <div class="fade-review">
+                    <img src="images/review1.jpeg" alt="Customer 1" width="250px" height="250px">
+                    <p>Exceptional service and a vast selection of top-quality cars to choose from. The staff was knowledgeable, friendly, and helped me find the perfect vehicle for my needs. Highly recommend Monarch Motors!"</p>
+                    <span class="customer-name">- John Doe</span>
+                </div>
+                <div class="fade-review">
+                    <img src="images/review2.jpeg" alt="Customer 2"width="250px" height="250px">
+                    <p>"Monarch Motors provided a smooth and stress-free car-buying experience. The showroom ambiance is impressive, and the team guided me through the process with expertise. A great place to find your dream car."</p>
+                    <span class="customer-name">- Jane Smith</span>
+                </div>
+                <div class="fade-review">
+                    <img src="images/review3.jpeg" alt="Customer 3"width="250px" height="250px">
+                    <p>"I recently purchased a car from Monarch Motors, and the entire experience exceeded my expectations. The attention to detail, transparency in the buying process, and excellent customer service set them apart. I'm extremely satisfied with my new car!"</p>
+                    <span class="customer-name">- David Johnson</span>
+                </div>
+                <div class="fade-review">
+                    <img src="images/review4.jpeg" alt="Customer 4"width="250px" height="250px">
+                    <p>"Monarch Motors offers a diverse range of cars, and the team was helpful in providing information on different models. The showroom is well-maintained, and the buying process was efficient. Overall, a positive and enjoyable car-buying journey."</p>
+                    <span class="customer-name">- Emily White</span>
+                </div>
+                <br>
+                <br>
+        
+  
+
+
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Monarch Motors</p>
+            <p><a href="privacypolicy.html">privacy policy </a>--<a href="termsofuse.html">Website Terms Of Use</a> </p>
+            <p>Contact us at: <a href="mailto:info@monarchmotors.com"> info@monarchmotors.com</a> </p>
+            
+        </div>
+    </footer>
+   
+</body>
+
+</html>

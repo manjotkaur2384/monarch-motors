@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <title>MonarchMotors</title>
+    <style>.signup-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .signup-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> Monarch Motors</div>
+       
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Inventory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="signup-container">
+        <form class="signup-form">
+            <h2><br>
+                Sign Up</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required> 
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Monarch Motors</p>
+            <p><a href="privacypolicy.html">privacy policy </a>--<a href="termsofuse.html">Website Terms Of Use</a> </p>
+            <p>Contact us at: <a href="mailto:info@monarchmotors.com"> info@monarchmotors.com</a> </p>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
