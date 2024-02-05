@@ -34,7 +34,7 @@ header:hover {
     display: flex;/* Add display: flex to arrange items in a row */
     justify-content: space-around; /* Adjust as needed for spacing */
     align-items: center; /* Center items vertically */
-    background-image: url('images/indexmustang.jpeg'); /* Replace 'background-image.jpg' with your actual image file */
+    background-image: url('indexmustang.jpeg'); /* Replace 'background-image.jpg' with your actual image file */
     background-size: cover;
     background-position: center;
     color: #fff;
